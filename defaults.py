@@ -2,8 +2,8 @@
 # Fill this according to own setup
 BACKGROUND_DIR = '/content/drive/MyDrive/datasets/background/farm/'
 BACKGROUND_GLOB_STRING = '*.jpg'
-POISSON_BLENDING_DIR = '/content/pb'
-SELECTED_LIST_FILE = '/content/drive/MyDrive/datasets/pig_data_scripts/selected.txt'
+POISSON_BLENDING_DIR = '/content/syndata-generation/pb'
+SELECTED_LIST_FILE = '/content/syndata-generation/selected.txt'
 DISTRACTOR_LIST_FILE = '' 
 DISTRACTOR_DIR = ''
 DISTRACTOR_GLOB_STRING = '*.jpg'
