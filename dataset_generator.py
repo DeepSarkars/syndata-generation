@@ -92,10 +92,12 @@ def get_list_of_images(root_dir, N=1):
     Returns:
         list: List of images(with paths) that will be put in the dataset
     '''
-    img_list = glob.glob(os.path.join(root_dir, '*/*.jpg'))
+    img_list = glob.glob(os.path.join(root_dir, '*/*.png'))
     img_list_f = []
     for i in xrange(N):
         img_list_f = img_list_f + random.sample(img_list, len(img_list))
+    print("image list")
+    print(len(img_list_f))
     return img_list_f
 
 def get_mask_file(img_file):
@@ -109,7 +111,7 @@ def get_mask_file(img_file):
     Returns:
         string: Correpsonding mask file path
     '''
-    mask_file = img_file.replace('.jpg','.pbm')
+    mask_file = img_file.replace('.png','.pbm')
     return mask_file
 
 def get_labels(imgs):
